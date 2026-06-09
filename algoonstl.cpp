@@ -1,15 +1,15 @@
-          A L G O    IN     S T L
+           A L G O    IN     S T L
 
 
 
-         ITERATORS AND ITERATING ALGOS             
+         ITERATORS AND ITERATING ALGOS    $         
 
 
 
 //every algo me header file algorithm use kar
 
 
-1. for_each
+1. for_each #
 
 
 //sbke uper ek operation karne ke liye
@@ -50,7 +50,7 @@ for_each(v.begin(), v.end(), kai);  //function call kara
 
 
 
-2.         find                     
+2.         find #                     
 
 
 
@@ -96,7 +96,7 @@ vector<int> v = {1, 2, 3, 4, 5};
 //if target value nahi mili toh 0 return dega
 
 
-3.       find_if              
+3.       find_if #             
 
 
 //serches the first element that satisfies predicate
@@ -130,7 +130,7 @@ auto it= find_if(v.begin(),v.end(),b);
 
 
 
-4.           count()
+4.           count() #
 
 
 // //count karta kitne elements
@@ -151,7 +151,7 @@ cout<<p;
 
 
 
-5.     similar count_if 
+5.     similar count_if  #
 
 
 
@@ -204,7 +204,7 @@ cout<<ans;
 // }
 
 
-6.             sort
+6.             sort #
 
 
 
@@ -247,7 +247,7 @@ reverse(v.begin(),v.end());
 
  
 
-7.            rotate
+7.            rotate #
 
 
 
@@ -267,7 +267,7 @@ reverse(v.begin(),v.end());
 //n=1,2,3,4,...........
 
 
-//A. right shift
+A. right shift @
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -303,7 +303,7 @@ int main(){
 //v.begin()+4 wala sbse aage ajaega phir 
 //series aage chalti jaegi
 
-// //B. ab left shift
+B. ab left shift @
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -325,7 +325,7 @@ int main(){
 //sbse piche baaki uske piche
 
 
-8.  unique
+8.  unique #
 
 
 //only saves unique...
@@ -352,7 +352,7 @@ for(int dih: v){
 //not all 2 2 3 2-->2 3 2 not 2 3
 
 
-9. partition
+9. partition #
 
 
 //nam se hi pta lag raha hai
@@ -386,7 +386,7 @@ int main(){
 
 
 
-            NUMERIC ALGOS             
+            NUMERIC ALGOS   $          
 
 
 
@@ -395,7 +395,7 @@ int main(){
 
 
 
-1.           accumulate
+1.           accumulate #
 
 
 
@@ -428,7 +428,7 @@ int main() {
 //out=112
 
 
-2.             inner_product
+2.             inner_product #
 
 
 
@@ -448,7 +448,7 @@ int ans= inner_product(v.begin(),v.end(),x.begin(),0);
 // 1*2+2*6+3*7+4*8 hora hai
 
 
-3.          partial_sum
+3.          partial_sum #
 
 
 
@@ -481,7 +481,7 @@ int main() {
 
 
 
-4.          iota
+4.          iota #
 
 
 //values create and add ker dega
@@ -521,7 +521,7 @@ vector<int>v={7};
 
 
 
-         FINDING & SEARCHING ALGOS         
+         FINDING & SEARCHING ALGOS     $    
 
 
 
@@ -531,7 +531,7 @@ vector<int>v={7};
 
 
 
-1.        binary_search
+1.        binary_search #
 
 
 #include <bits/stdc++.h>
@@ -551,7 +551,7 @@ cout<<it;
 //110 is not present in vector
 
 
-2.     lower_bound
+2.     lower_bound #
 
 
 //ye greater than and equal to values dega
@@ -609,7 +609,7 @@ auto a=lower_bound(v.begin(),v.end(),9.24);
  
 
 
-3.        upper bound
+3.        upper bound #
 
 //sirf greater value dega not even equal to
 
@@ -639,7 +639,7 @@ int main() {
 
 
 
-4.      equal range
+4.      equal range #
 
 
 // Socho Ek Class Hai
@@ -681,7 +681,7 @@ int main() {
 
 
 
-               MIN MAX ALGOS  
+               MIN MAX ALGOS  $
                
                
 
@@ -735,8 +735,7 @@ x = min_element(v.begin(),v.end());;
 
 
 
-          HEAP ALGOS   
-
+          HEAP ALGOS   $
 
 //binary tree ka part ig
 
@@ -865,7 +864,8 @@ int main() {
 
 
 
-// SET ALGOS  //
+                  
+                    SET ALGOS  $
 
 
 
@@ -880,7 +880,7 @@ int main() {
     set<int> s2 = {3, 4, 5, 6, 7};
 
  
-        1. Union
+        1. Union #
 
 
 // //  inserter hai ye niche wala
@@ -897,7 +897,7 @@ int main() {
     for(int a : unionSet) cout << a << " ";
 
 
-            2. Intersection
+            2. Intersection #
 
 
 //     //inserter
@@ -913,7 +913,7 @@ cout << "\nIntersection     : ";
 for(int a : interSet) cout << a << " ";
 
 
-      3. Difference  (s1 - s2)
+      3. Difference  (s1 - s2) #
 
 
 // //inserter
@@ -929,7 +929,7 @@ cout << "\nDifference(s1-s2): ";
 for(int a : diffSet) cout << a << " ";
 
 
-      4. Symmetric Difference
+      4. Symmetric Difference #
 
 
 //     //inserter
@@ -946,7 +946,7 @@ for(int a : symSet) cout << a << " ";
 
 
 
-          5. Subset check
+          5. Subset check #
 
 
 bool isSubset = includes(s1.begin(), s1.end(),
